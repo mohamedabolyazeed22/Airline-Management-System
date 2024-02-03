@@ -6,17 +6,20 @@ import java.sql.SQLException;
 import raven.toast.Notifications;
 
 public class MySqlConnection {
-     public static Connection con;
-     
-      public MySqlConnection() {
-         connect();
-    }
-    
-    public void connect(){
+
+    static Connection con;
+
+    static {
         try {
-        Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/AirlLineManagement","root","PHW#84#jeor");
-       
-         } catch (SQLException ex) {
-            Notifications.getInstance().show(Notifications.Type.WARNING,"There is no Connection With Database!");
+            con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/AirlLineManagement", "root", "PHW#84#jeor");
+
+        } catch (SQLException ex) {
+            Notifications.getInstance().show(Notifications.Type.ERROR, "Error");
+        }
     }
-    }}
+
+    public MySqlConnection() {
+
+    }
+
+}

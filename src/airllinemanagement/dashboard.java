@@ -82,7 +82,7 @@ public class dashboard extends javax.swing.JFrame {
         });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 215, 315, -1));
 
-        jButton5.setText("<--Back");
+        jButton5.setText("Log out");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -125,8 +125,8 @@ public class dashboard extends javax.swing.JFrame {
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-         dashboard obj = new dashboard();
-        obj.setVisible(true);
+        //dashboard obj = new dashboard();
+        new loginpage().setVisible(true);
         dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 

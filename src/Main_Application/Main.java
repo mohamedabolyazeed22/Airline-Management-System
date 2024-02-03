@@ -37,14 +37,14 @@ public class Main extends JFrame{
 
     
   }
-    public static void main(String[] args) {
-        FlatMacLightLaf.setup();
-        EventQueue.invokeLater(() -> new Main().setVisible(true));
-         
-            Main main = new Main();
-            main.setVisible(true);
-        
-    }  
+//    public static void main(String[] args) {
+//        FlatMacLightLaf.setup();
+//        EventQueue.invokeLater(() -> new Main().setVisible(true));
+//         
+//            Main main = new Main();
+//            main.setVisible(true);
+//        
+//    }  
     }
 
 
