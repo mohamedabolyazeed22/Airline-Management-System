@@ -19,7 +19,6 @@ public class TicketCollection extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         tid = new javax.swing.JTextField();
@@ -29,11 +28,6 @@ public class TicketCollection extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
         jLabel1.setText("Ticket Collection");
@@ -102,15 +96,13 @@ public class TicketCollection extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String args[]) {
         //FlatMacLightLaf.setup();
         FlatMacDarkLaf.setup();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TicketCollection().setVisible(true);
+               // new TicketCollection().setVisible(true);
             }
         });
     }
@@ -120,7 +112,6 @@ public class TicketCollection extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField tid;
     // End of variables declaration//GEN-END:variables
 }

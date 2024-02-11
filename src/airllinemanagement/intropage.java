@@ -1,12 +1,9 @@
 package airllinemanagement;
 
 import javax.swing.JLabel;
-import com.formdev.flatlaf.themes.FlatMacLightLaf;
 import java.awt.Desktop;
-import java.awt.Toolkit;
 import java.net.URL;
 import javax.swing.JOptionPane;
-import Main_Application.Main;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import java.io.IOException;
 import java.io.InputStream;
@@ -107,11 +104,16 @@ public class intropage extends javax.swing.JFrame {
         lab_teamName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lab_teamName.setText("ElZoz");
         lab_teamName.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        kGradientPanel.add(lab_teamName, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 420, 150, 40));
+        kGradientPanel.add(lab_teamName, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 420, 110, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/socialmedia/20.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        kGradientPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 80, 610, 370));
+        kGradientPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 80, 680, 370));
+
+        svgIconGitHub.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                svgIconGitHubMouseClicked(evt);
+            }
+        });
         kGradientPanel.add(svgIconGitHub, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 480, 40, 40));
 
         svgIconLinkedin.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -129,7 +131,7 @@ public class intropage extends javax.swing.JFrame {
 
     private void svgIconLinkedinMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_svgIconLinkedinMouseClicked
         try{
-        Desktop.getDesktop().browse(new URL("").toURI());
+        Desktop.getDesktop().browse(new URL("https://www.linkedin.com/in/mohamed-abolyazeed-246a78255/").toURI());
         } catch(Exception e){
         
         }
@@ -137,7 +139,7 @@ public class intropage extends javax.swing.JFrame {
 
     private void svgIconGitHubMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_svgIconGitHubMouseClicked
         try{
-        Desktop.getDesktop().browse(new URL("").toURI());
+        Desktop.getDesktop().browse(new URL("https://github.com/MohamedAboElYazeed/").toURI());
         } catch(Exception e){
         
         }       
