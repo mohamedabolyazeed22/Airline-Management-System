@@ -24,7 +24,7 @@ CREATE TABLE manageflight (
 CREATE TABLE ticketbooking (
      passenger_id INT AUTO_INCREMENT PRIMARY KEY,
      passenger_number INT ,
-	 passenger_name VARCHAR(255),
+     passenger_name VARCHAR(255),
      flight_code VARCHAR(10),
      nationality  VARCHAR(50),
      gender varchar(8),
