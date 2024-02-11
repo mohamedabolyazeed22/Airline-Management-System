@@ -138,7 +138,7 @@ public class dashboard extends javax.swing.JFrame {
         FlatMacDarkLaf.setup();
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new dashboard().setVisible(true);
+                //new dashboard().setVisible(true);
             }
         });
     }
